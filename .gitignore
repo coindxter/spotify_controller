@@ -1,0 +1,18 @@
+# Virtual environment folder
+venv/
+
+# Python bytecode files
+__pycache__/
+
+# Environment variables
+*.env
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Specific files
+run.sh
+
+# Spotipy cache file
+.cache
