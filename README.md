@@ -1,0 +1,1 @@
+Little project for my raspberry pi 4B. I got a 7inch touch screen and I wanted to make something to display the currecnt some I am playing from spodify with some controls to pause/play, skip, and go the previous songs.
