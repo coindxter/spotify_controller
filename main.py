@@ -168,6 +168,11 @@ def create_gui():
 
 #-----------------------------
 
+    screen_width = root.winfo_screenwidth()
+    num_buttons = 3  # Adjust if you add more buttons
+    button_spacing = screen_width // (num_buttons + 1)
+
+
     # Common Button Style
     button_style = {
         "font": BUTTON_TEXT,
@@ -184,7 +189,7 @@ def create_gui():
         command=previous_song,
         **button_style)
     previous_button.place(
-        x=50, 
+        x=button_spacing - BUTTON_WIDTH // 2, 
         y=FIXED_BUTTON_HEIGHT, 
         width=BUTTON_WIDTH, 
         height=BUTTON_HEIGHT)
@@ -196,7 +201,7 @@ def create_gui():
         command=toggle_play_pause,
         **button_style)
     play_pause_button.place(
-        x=350, 
+        x=(2 * button_spacing) - BUTTON_WIDTH // 2, 
         y=FIXED_BUTTON_HEIGHT, 
         width=BUTTON_WIDTH, 
         height=BUTTON_HEIGHT)
@@ -208,10 +213,10 @@ def create_gui():
         command=skip_song,
         **button_style)
     skip_button.place(
-        x=650, 
+        x=(3 * button_spacing) - BUTTON_WIDTH // 250, 
         y=FIXED_BUTTON_HEIGHT, 
         width=BUTTON_WIDTH, 
-       height=BUTTON_HEIGHT)
+        height=BUTTON_HEIGHT)
 
 #-----------------------------
 
