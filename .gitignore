@@ -12,7 +12,8 @@ __pycache__/
 Thumbs.db
 
 # Specific files
-run.sh
+run.sh 
+test.py  
 
 # Spotipy cache file
 .cache
